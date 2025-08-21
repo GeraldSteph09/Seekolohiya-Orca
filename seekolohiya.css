@@ -1,0 +1,65 @@
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 30%;
+    background-position-y: 30%;
+    background-attachment: fixed;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+h4 {
+    text-align: center;
+    color: white;
+    justify-content: center;
+    margin: 10px 0;
+}
+.about {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+.links h2 {
+    color: white;
+}
+
+img {
+    width: 21px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+button {
+    font-size: 18px;
+    justify-content: center;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    height: auto;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px white solid;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+button:active {
+    transform: translateY(1px);
+}
