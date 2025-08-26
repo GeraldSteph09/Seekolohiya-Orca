@@ -76,7 +76,7 @@ div {
 .desc {
     background: rgba(255, 255, 255, 0.2);
     font-size: larger;
-    height: 100px;
+    height: auto;
     vertical-align: middle;
     align-items: center;
     justify-content: center;
@@ -87,7 +87,7 @@ div {
 p {
     background: rgba(255, 255, 255, 0.2);
     font-size: larger;
-    height: 100px;
+    height: auto;
     vertical-align: middle;
     align-items: center;
     justify-content: center;
@@ -130,4 +130,5 @@ ul:hover {
     .intro, .socials, .skills, .works, .pskills {
         padding: 10px; /* Adjust padding for mobile */
     }
+
 }
