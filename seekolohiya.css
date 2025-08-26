@@ -64,6 +64,17 @@ button:active {
     transform: translateY(1px);
 
 }
+.form {
+    text-align: center;
+    color: white;
+}
+.logo {
+    width: 35px;
+}
+.committee {
+    text-align: center;
+    color: white;
+}
 
 @media (max-width: 768px) {
     h1 {
@@ -98,3 +109,4 @@ button:active {
         font-size: 14px; 
     }
 }
+
