@@ -1,0 +1,133 @@
+header {
+  display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(30, 30, 30, 0.8), rgba(60, 60, 60, 0.8)); 
+    color: white;
+    font-size: 24px; 
+    height: 70px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 30%;
+    background-position-y: 30%;
+    background-attachment: fixed;
+    margin: 0;
+}
+.grid {
+    display: grid;
+    grid-template-areas:
+    "logistics intro events"
+    "creatives publication media";
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+.grid > div.logistics {
+    grid-area: logistics;
+}
+.grid > div.intro {
+    grid-area: intro;
+}
+.grid > div.events {
+    grid-area: events;
+}
+.grid > div.creatives {
+    grid-area: creatives;
+}
+.grid > div.publication {
+    grid-area: publication;
+}
+.grid > div.media {
+    grid-area: media;
+}
+div {
+    color: white;
+    text-align: center;
+
+}
+
+.desc {
+    background: rgba(255, 255, 255, 0.2);
+    font-size: larger;
+    height: 100px;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+p {
+    background: rgba(255, 255, 255, 0.2);
+    font-size: larger;
+    height: 100px;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+ul {
+    background: rgba(255, 255, 255, 0.2);
+    font-size: larger;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    height: auto;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+p:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+ul:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-areas: 
+            "intro"
+            "logistics"
+            "events"
+            "publication"
+            "creatives"
+            "media";
+        grid-template-columns: 1fr; /* Stack all items */
+    }
+
+    .intro, .socials, .skills, .works, .pskills {
+        padding: 10px; /* Adjust padding for mobile */
+    }
+}
