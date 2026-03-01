@@ -67,6 +67,11 @@ h2, h3 {
 
 @media (max-width: 768px) {
 
+    body {
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
+
     button {
         padding: 8px 12px;
         font-size: 14px;
@@ -89,6 +94,10 @@ h2, h3 {
 
 @media (max-width: 480px) {
 
+   body {
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
 
     button {
         padding: 6px 10px;
@@ -112,4 +121,5 @@ h2, h3 {
     h4 {
         font-size: 14px;
     }
+
 }
