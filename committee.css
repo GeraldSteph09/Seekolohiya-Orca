@@ -166,4 +166,9 @@ ul:hover {
         padding: 8px 12px;
         font-size: 14px;
     }
+      body {
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
 }
+
