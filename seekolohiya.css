@@ -64,7 +64,7 @@ button:active {
     transform: translateY(1px);
 
 }
-.form {
+.introduction {
     text-align: center;
     color: white;
 }
@@ -118,5 +118,6 @@ button:active {
         background-position-x: 50%;
         background-position-y: 50%;
     }}
+
 
 
