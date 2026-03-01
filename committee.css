@@ -70,14 +70,24 @@ body {
 div {
     color: white;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
+h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+li {
+    margin: 5px 0;
 }
 
 .desc {
+    display: flex;
     background: rgba(255, 255, 255, 0.2);
     font-size: larger;
-    height: auto;
-    vertical-align: middle;
+    min-height: 100px;
     align-items: center;
     justify-content: center;
     border: 2px solid rgba(255, 255, 255, 1);
@@ -85,26 +95,32 @@ div {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 p {
+    display: flex;
     background: rgba(255, 255, 255, 0.2);
     font-size: larger;
-    height: auto;
-    vertical-align: middle;
+    min-height: auto;
     align-items: center;
     justify-content: center;
     border: 2px solid rgba(255, 255, 255, 1);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, transform 0.3s;
+    margin: 0 0 15px 0;
+    padding: 10px;
 
 }
 ul {
+    display: flex;
+    flex-direction: column;
     background: rgba(255, 255, 255, 0.2);
     font-size: larger;
     border: 2px solid rgba(255, 255, 255, 1);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    height: auto;
     transition: background-color 0.3s, transform 0.3s;
+    padding: 15px 10px 15px 30px;
+    margin: 0;
+    list-style-position: inside;
 
 }
 p:hover {
@@ -116,6 +132,12 @@ ul:hover {
     transform: translateY(-2px);
 }
 @media screen and (max-width: 600px) {
+    header {
+        font-size: 18px;
+        height: auto;
+        padding: 10px 15px;
+    }
+
     .grid {
         grid-template-areas: 
             "intro"
@@ -124,17 +146,24 @@ ul:hover {
             "publication"
             "creatives"
             "media";
-        grid-template-columns: 1fr; /* Stack all items */
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 5px;
+        margin: 5px;
     }
 
-    .intro, .socials, .skills, .works, .pskills {
-        padding: 10px; /* Adjust padding for mobile */
+    .logistics, .intro, .events, .creatives, .publication, .media {
+        padding: 10px;
     }
 
-    body {
-        background-position-x: 50%;
-        background-position-y: 50%;
+    .desc, p, ul {
+        font-size: medium;
+        min-height: auto;
+        padding: 10px;
     }
 
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
 }
-
