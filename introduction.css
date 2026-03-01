@@ -1,0 +1,66 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 30%;
+    background-position-y: 30%;
+    background-attachment: fixed;
+    margin: 0;
+}
+header {
+  display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(30, 30, 30, 0.8), rgba(60, 60, 60, 0.8)); 
+    color: white;
+    font-size: 24px; 
+    height: 70px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.main {
+    background: rgba(255, 255, 255, 0.2);
+    font-size: larger;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 20px;
+    color: white;
+    margin: 90px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.indent {
+    margin-left: 2em;
+}
